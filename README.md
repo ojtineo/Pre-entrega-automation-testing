@@ -1,99 +1,78 @@
-# Proyecto de Pruebas Automatizadas con Python y Selenium WebDriver
+# Automatización de pruebas web con Selenium y Pytest
 
-## 1. Propósito del proyecto
+## Descripción del proyecto
 
-El objetivo de este proyecto es automatizar pruebas funcionales sobre el sitio web de demostración [SauceDemo](https://www.saucedemo.com/), utilizando Python, Selenium WebDriver y Pytest.
+Proyecto de automatización de pruebas funcionales sobre el sitio web [SauceDemo](https://www.saucedemo.com/), desarrollado con Python, Selenium WebDriver y Pytest.
 
-Las pruebas permiten verificar el funcionamiento del inicio de sesión, la visualización del inventario de productos y las operaciones básicas del carrito de compras.
+El objetivo es validar funcionalidades principales de la aplicación mediante pruebas automatizadas y generar un informe HTML con los resultados de la ejecución.
 
-## 2. Tecnologías utilizadas
+## Tecnologías utilizadas
 
-* Python: lenguaje de programación utilizado para desarrollar las pruebas.
-* Selenium WebDriver: herramienta para automatizar la interacción con el navegador.
-* Pytest: framework para ejecutar y organizar las pruebas automatizadas.
-* pytest-html: plugin para generar reportes HTML con los resultados de la ejecución.
-* Google Chrome: navegador utilizado para ejecutar las pruebas.
+* Python: lenguaje de programación.
+* Selenium WebDriver: automatización de la interacción con el navegador.
+* Pytest: ejecución y organización de las pruebas.
+* pytest-html: generación del informe HTML.
+* Google Chrome:* navegador utilizado para ejecutar las pruebas.
 
-## 3. Alcance de las pruebas
+## Pruebas implementadas
 
-### Login
+### Inicio de sesión
 
-* Verificar el inicio de sesión exitoso con credenciales válidas.
-* Comprobar la navegación hacia la página de inventario.
-* Validar la presencia del logo y el título de productos.
-* Verificar el rechazo de credenciales incorrectas y la visualización del mensaje de error.
+* Validación del inicio de sesión exitoso.
+* Comprobación de la URL de inventario.
+* Verificación del logo y del título de productos.
+* Validación del mensaje de error ante credenciales incorrectas.
 
 ### Inventario
 
-* Validar el título de la página.
-* Comprobar que se muestren productos.
-* Verificar el nombre y el precio del primer producto.
-* Comprobar la visibilidad del menú y del selector de ordenamiento.
+* Verificación del título de la página.
+* Comprobación de que existan productos.
+* Validación del nombre y precio del primer producto.
+* Verificación de la visibilidad del menú y del selector de ordenamiento.
 
 ### Carrito de compras
 
-* Iniciar sesión y acceder al inventario.
-* Agregar un producto al carrito.
-* Verificar que el contador del carrito muestre una unidad.
-* Comprobar que el producto agregado aparezca en el carrito.
+* Incorporación de un producto al carrito.
+* Comprobación de la cantidad de productos agregados.
+* Verificación de que el producto agregado aparezca en el carrito.
 
-## 4. Requisitos previos
+## Requisitos previos
 
-Antes de ejecutar el proyecto, se necesita:
+* Python instalado.
+* Google Chrome instalado.
+* Conexión a Internet.
+* Dependencias del proyecto instaladas.
 
-* Tener Python instalado.
-* Tener Google Chrome instalado.
-* Tener acceso a Internet.
-* Instalar las dependencias necesarias del proyecto.
+## Instalación
 
-## 5. Instalación de dependencias
-
-Clonar el repositorio y acceder a la carpeta del proyecto:
-
-git clone URL_DEL_REPOSITORIO
-cd NOMBRE_DEL_REPOSITORIO
-
-Instalar las dependencias:
+Instalar las dependencias necesarias desde la terminal:
 
 python -m pip install pytest selenium pytest-html
 
+## Ejecución de las pruebas
 
-Selenium Manager puede encargarse de resolver el controlador del navegador cuando la instalación y el entorno lo permiten.
-
-## 6. Ejecución de las pruebas
-
-La configuración de Pytest se encuentra en `pytest.ini` y establece los siguientes parámetros:
-
-[pytest]
-python_files = test_*.py
-python_functions = test_*
-addopts = -v -s --html=report/reporte.html --self-contained-html
-
-Para ejecutar las pruebas, utilizar:
+Desde la carpeta raíz del proyecto, ejecutar en la terminal:
 
 pytest
 
-El comando ejecuta los tests detectados por Pytest y utiliza la configuración definida en `pytest.ini`.
+La configuración de `pytest.ini` establece la ejecución detallada de las pruebas y la generación de un informe HTML.
 
-El reporte HTML se configura en la siguiente ruta:
+## Informe de resultados
 
-report/reporte.html
+El informe se genera en:
+
+`report/reporte.html`
+
+Para consultarlo, abrir ese archivo con un navegador web después de ejecutar las pruebas.
+
+La carpeta `report` debe existir antes de la ejecución para que Pytest pueda guardar el informe en esa ubicación.
+
+## Estado de las funcionalidades
+
+* Pruebas automatizadas de login, inventario y carrito: implementadas en los scripts compartidos.
+* Generación de informe HTML: configurada mediante `pytest-html`.
 
 
-La carpeta `report` debe existir antes de la ejecución para que Pytest pueda guardar el archivo.
+## Repositorio
 
-## 7. Reporte de resultados
-
-Al finalizar la ejecución, Pytest genera un reporte HTML con los resultados de las pruebas, siempre que la ejecución y la escritura del archivo se completen correctamente.
-
-El reporte permite consultar los resultados de la ejecución de los casos de prueba.
-
-## 8. Evidencias de ejecución
-
-El proyecto contempla como evidencia:
-
-* Reporte HTML: resultados de la ejecución de las pruebas automatizadas.
-
-## 9. Autor
-
-Proyecto de práctica de QA Automation desarrollado con Python, Selenium WebDriver y Pytest.
+El proyecto se publicará en GitHub cuando se complete la preparación del repositorio.
