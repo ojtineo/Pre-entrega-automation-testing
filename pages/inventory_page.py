@@ -26,6 +26,6 @@ class InventoryPage:
         return menu.is_displayed()
 
     def filtro_visible(self):
-            filtro = self.driver.find_element(By.ID,"product-sort-container")
+            filtro = self.driver.find_element(By.CLASS_NAME,"product_sort_container")
     
             return filtro.is_displayed()

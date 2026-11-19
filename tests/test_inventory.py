@@ -3,11 +3,11 @@ from pages.inventory_page import InventoryPage
 
 def test_inventory(driver):
     login_page = LoginPage(driver)
-    inventory_page = inventory_page(driver)
+    inventory_page = InventoryPage(driver)
 
     driver.get("https://www.saucedemo.com/")
 
-    login_page.login("standard_user", "secret_sauce")
+    login_page.login("standard_user","secret_sauce")
 
     productos = inventory_page.obtener_productos()
 
