@@ -1,5 +1,5 @@
 import requests
-
+import pytest_check as check
 def test_obtener_usuario(base_url,headers):
     url = f"{base_url}/users/7"
 
@@ -46,7 +46,6 @@ def test_crear_usuario(base_url,headers):
     }
 
     response = requests.post(url,headers=headers,json=usuario)
-
     #print(response.json())
 
     # Nivel 1
@@ -57,15 +56,15 @@ def test_crear_usuario(base_url,headers):
 
     # Nivel 3
     data = response.json()
-    assert "email" in data
-    assert "first_name" in data
-    assert "last_name" in data
-    assert "id" in data
+    check.is_in("email",data) #assert "email" in data
+    check.is_in("first_name",data) #assert "first_name" in data
+    check.is_in("last_name",data) #assert "last_name" in data
+    check.is_in("id",data) #assert "id" in data
 
     # Nivel 4
-    assert data["email"] == usuario["email"]
-    assert data["first_name"] == usuario["first_name"]
-    assert data["last_name"] == usuario["last_name"]
+    check.equal(data["email"],usuario["email"]) #assert data["email"] == usuario["email"]
+    check.equal(data["first_name"],usuario["first_name"]) #assert data["first_name"] == usuario["first_name"]
+    check.equal(data["last_name"],usuario["last_name"]) #assert data["last_name"] == usuario["last_name"]
 
     # Nivel 5
     assert response.elapsed.total_seconds() <2

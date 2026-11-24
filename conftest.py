@@ -41,4 +41,3 @@ def pytest_runtest_makereport(item,call):
         report.extras = [
             pytest_html.extras.png(imagen,name="Screenshot")
         ]
-
