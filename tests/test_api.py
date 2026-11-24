@@ -70,23 +70,23 @@ def test_crear_usuario(base_url,headers):
     # Nivel 5
     assert response.elapsed.total_seconds() <2
 
-    def test_eliminar_usuario(base_url,headers):
-        url = f"{base_url}/users7"
+def test_eliminar_usuario(base_url,headers):
+    url = f"{base_url}/users7"
 
-        response = requests.delete(url,headers=headers)
+    response = requests.delete(url,headers=headers)
 
-        # Nivel 1 Status Code
-        assert response.status_code ==204
+    # Nivel 1 Status Code
+    assert response.status_code ==204
 
-        # Novel 2 Headers
-        assert "Content-Type" not in response.headers
+    # Novel 2 Headers
+    assert "Content-Type" not in response.headers
 
-        # Nivel 3 y 4 Estructura y Contenido
-        assert response.content == b""
-        #assert len(response.content) == 0 otra opción para validar
+    # Nivel 3 y 4 Estructura y Contenido
+    assert response.content == b""
+    #assert len(response.content) == 0 otra opción para validar
 
-        # NIvel 5 Tiempo de Respuesta
-        assert response.elapsed.total_seconds() <2
+    # NIvel 5 Tiempo de Respuesta
+    assert response.elapsed.total_seconds() <2
 
 
     """

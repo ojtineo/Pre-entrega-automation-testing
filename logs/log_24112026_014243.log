@@ -1,0 +1,38 @@
+2026-11-24 01:42:47,813 INFO talento_tech - Iniciando prueba del carrito 
+2026-11-24 01:42:47,813 INFO talento_tech - Accesando a la página principal de Saucedemo
+2026-11-24 01:42:48,959 INFO talento_tech - Ingresando credenciales para iniciar sesión
+2026-11-24 01:42:49,475 INFO talento_tech - Inicio de sesión con usuario correcto:'standard_user'
+2026-11-24 01:42:49,476 INFO talento_tech - Ingresando a la página del inventario
+2026-11-24 01:42:49,476 INFO talento_tech - Leyendo el primer producto del JSON
+2026-11-24 01:42:49,477 INFO talento_tech - Agregando producto del JSON al carrito
+2026-11-24 01:42:49,812 INFO talento_tech - Prueba del contador del carrito validada
+2026-11-24 01:42:49,812 INFO talento_tech - Ir a la página del carrito
+2026-11-24 01:42:50,000 INFO talento_tech - Prueba del nombre del producto en carrito contra el JSON validada
+2026-11-24 01:42:50,039 INFO talento_tech - Prueba del precio del producto en carrito contra el JSON validada
+2026-11-24 01:42:55,166 INFO talento_tech - Iniciando prueba de inventario
+2026-11-24 01:42:55,166 INFO talento_tech - Accesando a la página principal de Saucedemo
+2026-11-24 01:42:56,022 INFO talento_tech - Ingresando credenciales para iniciar sesión
+2026-11-24 01:42:56,944 INFO talento_tech - Inicio de sesión con usuario correcto:'standard_user'
+2026-11-24 01:42:57,110 INFO talento_tech - Productos obtenidos del inventario
+2026-11-24 01:42:57,110 INFO talento_tech - Cantidad de productos encontrados verificados
+2026-11-24 01:42:57,178 INFO talento_tech - Verificando nombre del primer producto: 'Sauce Labs Backpack'
+2026-11-24 01:42:57,233 INFO talento_tech - Verificando precio del primer producto: '$29.99'
+2026-11-24 01:42:57,272 INFO talento_tech - Verificando visibilidad del menú
+2026-11-24 01:42:57,306 INFO talento_tech - Verificando visibilidad del filtro de productos
+2026-11-24 01:43:03,565 INFO talento_tech - Iniciando prueba de login
+2026-11-24 01:43:04,559 INFO talento_tech - Página abierta correctamente
+2026-11-24 01:43:05,258 INFO talento_tech - Ingreso de credenciales
+2026-11-24 01:43:05,274 ERROR talento_tech - Error durante la prueba de login
+Traceback (most recent call last):
+  File "C:\Users\ojtin\Documents\Python\Pre-entrega-automation-testing\tests\test_login.py", line 21, in test_login
+    assert "/inventory.html" in driver.current_url
+AssertionError: assert '/inventory.html' in 'https://www.saucedemo.com/'
+ +  where 'https://www.saucedemo.com/' = <selenium.webdriver.chrome.webdriver.WebDriver (session="beb8b1e713995e06eea2ff59aa8d25a7")>.current_url
+2026-11-24 01:43:11,493 INFO talento_tech - Iniciando prueba de login
+2026-11-24 01:43:12,783 INFO talento_tech - Página abierta correctamente
+2026-11-24 01:43:13,477 INFO talento_tech - Ingreso de credenciales
+2026-11-24 01:43:13,554 INFO talento_tech - Prueba de mensaje de error válida
+2026-11-24 01:43:19,049 INFO talento_tech - Iniciando prueba de login
+2026-11-24 01:43:20,008 INFO talento_tech - Página abierta correctamente
+2026-11-24 01:43:20,566 INFO talento_tech - Ingreso de credenciales
+2026-11-24 01:43:20,638 INFO talento_tech - Prueba de mensaje de error válida
