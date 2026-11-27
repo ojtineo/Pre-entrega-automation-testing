@@ -1,0 +1,33 @@
+2026-11-27 01:12:04,177 INFO talento_tech - Iniciando prueba del carrito 
+2026-11-27 01:12:04,178 INFO talento_tech - Accesando a la página principal de Saucedemo
+2026-11-27 01:12:05,528 INFO talento_tech - Ingresando credenciales para iniciar sesión
+2026-11-27 01:12:06,104 INFO talento_tech - Inicio de sesión con usuario correcto:'standard_user'
+2026-11-27 01:12:06,105 INFO talento_tech - Ingresando a la página del inventario
+2026-11-27 01:12:06,106 INFO talento_tech - Leyendo el primer producto del JSON
+2026-11-27 01:12:06,107 INFO talento_tech - Agregando producto del JSON al carrito
+2026-11-27 01:12:06,509 INFO talento_tech - Prueba del contador del carrito validada
+2026-11-27 01:12:06,509 INFO talento_tech - Ir a la página del carrito
+2026-11-27 01:12:06,706 INFO talento_tech - Prueba del nombre del producto en carrito contra el JSON validada
+2026-11-27 01:12:06,748 INFO talento_tech - Prueba del precio del producto en carrito contra el JSON validada
+2026-11-27 01:12:11,517 INFO talento_tech - Iniciando prueba de inventario
+2026-11-27 01:12:11,518 INFO talento_tech - Accesando a la página principal de Saucedemo
+2026-11-27 01:12:12,249 INFO talento_tech - Ingresando credenciales para iniciar sesión
+2026-11-27 01:12:12,784 INFO talento_tech - Inicio de sesión con usuario correcto:'standard_user'
+2026-11-27 01:12:12,912 INFO talento_tech - Productos obtenidos del inventario
+2026-11-27 01:12:12,912 INFO talento_tech - Cantidad de productos encontrados verificados
+2026-11-27 01:12:12,980 INFO talento_tech - Verificando nombre del primer producto: 'Sauce Labs Backpack'
+2026-11-27 01:12:13,037 INFO talento_tech - Verificando precio del primer producto: '$29.99'
+2026-11-27 01:12:13,072 INFO talento_tech - Verificando visibilidad del menú
+2026-11-27 01:12:13,098 INFO talento_tech - Verificando visibilidad del filtro de productos
+2026-11-27 01:12:17,702 INFO talento_tech - Iniciando prueba de login
+2026-11-27 01:12:18,403 INFO talento_tech - Página abierta correctamente
+2026-11-27 01:12:18,986 INFO talento_tech - Ingreso de credenciales
+2026-11-27 01:12:19,109 INFO talento_tech - Login exitoso
+2026-11-27 01:12:23,886 INFO talento_tech - Iniciando prueba de login
+2026-11-27 01:12:24,662 INFO talento_tech - Página abierta correctamente
+2026-11-27 01:12:25,266 INFO talento_tech - Ingreso de credenciales
+2026-11-27 01:12:25,340 INFO talento_tech - Prueba de mensaje de error válida
+2026-11-27 01:12:30,351 INFO talento_tech - Iniciando prueba de login
+2026-11-27 01:12:31,082 INFO talento_tech - Página abierta correctamente
+2026-11-27 01:12:31,611 INFO talento_tech - Ingreso de credenciales
+2026-11-27 01:12:31,673 INFO talento_tech - Prueba de mensaje de error válida
